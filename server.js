@@ -25,7 +25,18 @@ var server = http.createServer(function(request, response){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`
-    HELLO CGC & RJN !
+    
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+    <title>hello</title>
+    <link rel="stylesheet" href="/x">
+    </head>
+    <body>
+    <h1> HELLO CGC & RJN! </h1>
+    <script src="/y"></script>
+    </body>
+    </html>
     
     \n`)
     response.end()
