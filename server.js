@@ -25,17 +25,8 @@ var server = http.createServer(function(request, response){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`
-    <!DOCTYPE html>
-    <html lang="zh-CN">
-    <head>
-    <title>hello</title>
-    <link rel="stylesheet" href="/x">
-    </head>
-    <body>
-    <h1> HELLO CGC </h1>
-    <script src="/y"></script>
-    </body>
-    </html>
+    HELLO CGC & RJN !
+    
     \n`)
     response.end()
   } else if(path === '/x'){
